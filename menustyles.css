@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+} 
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(10, 10, 10);
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo{
+    font-family: "Sen", sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.menu-container {
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.menu-list-item{
+    margin-right: 5px;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: rgb(10, 10, 10);
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+} 
+
+
+
+
+.movie-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start;
+    padding-top: 20px;
+    margin-left: 5%;
+    margin-right: 1.5%;
+}
+
+.movie-card {
+    width: calc(33.333% - 16px); /* Fixed width to fit three cards per row with space between them */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 16px; /* Space below each row of cards */
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px; /* Fixed height for the images */
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1.2em;
+    margin: 16px 0 8px;
+    color: white;
+}
+
+.movie-card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 16px 16px;
+}
+
+
+
+/* PROFILE */
+.profile-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 30%;
+    margin-top: 2%;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.profile-header .username {
+    margin: 5px 0;
+    color: #666;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-header .username i {
+    margin-left: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.profile-details {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.detail-value {
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.detail-value i {
+    margin-left: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
